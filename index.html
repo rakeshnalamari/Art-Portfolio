@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rakesh Art Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">Rakesh Art</div>
+  <ul>
+    <li><a href="index.html" class="active"><b>Home</b></a></li>
+    <li><a href="gallery.html"><b>Art Types</b></a></li>
+    <li><a href="contact.html"><b>Contact</b></a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero reveal">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-name" id="heroName">Rakesh Nalamari</h1>
+    <p>Dream. Sketch. Deliver.</p>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about reveal">
+  <div class="about-image">
+    <img src="images/about.png" alt="Rakesh Nalamari Art Portrait">
+  </div>
+
+  <div class="about-text">
+    <h2>About Me</h2>
+
+    <p>
+      Hi, I'm <strong>Rakesh Nalamari</strong> — a passionate artist and aspiring web developer. I specialize in pencil and pen sketches, capturing realistic portraits, animals, fantasy characters, and famous personalities. Over the years, I have participated in numerous competitions at district and state levels, winning many prizes and earning heartfelt praise for my creativity and skill.
+    </p>
+
+    <h3>Academic Background</h3>
+    <ul>
+      <li><strong>B.Tech in Computer Science and Engineering</strong> – Currently pursuing, blending logic, design, and creativity in projects.</li>
+      <li>Strong foundation in <strong>Java, SQL, and Web Development</strong>, with hands-on project experience.</li>
+      <li>Integrating art and technology to build interactive and visually appealing web experiences.</li>
+    </ul>
+
+    <h3>Achievements & Skills</h3>
+    <ul>
+      <li>Winner of multiple district and state-level art competitions.</li>
+      <li>Recognized for creativity and artistic precision with praise from mentors, peers, and audiences.</li>
+      <li>Proficient in <strong>pencil and pen sketches</strong> across various subjects and styles.</li>
+      <li>Web development skills: <strong>HTML, CSS, JavaScript</strong> for building online portfolios and galleries.</li>
+      <li>Strong problem-solving and aesthetic design sensibilities.</li>
+    </ul>
+
+    <h3>Passion Statement</h3>
+    <p>
+      I strive to combine creativity and technology to deliver visually striking art and functional web experiences. Whether sketching or coding, I aim for precision, beauty, and storytelling that resonates with people.
+    </p>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+<script>
+// SCROLL REVEAL for homepage
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".reveal").forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const trigger = window.innerHeight - 100;
+    if(top < trigger) el.classList.add("active");
+  });
+});
+</script>
+</body>
+</html>
